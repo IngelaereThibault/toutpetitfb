@@ -10,8 +10,8 @@
 <body>
 <h1>Bienvenu sur ce super site</h1>
 <nav>
-    <a href="exo1.php">Exo 1</a>
-    <a href="exo2.php">Exo 2</a>
+    <a href="Accueil.php">Accueil</a>
+    <a href="Amis.php">Amis</a>
 </nav>
 <h2>Page en cours : {{ $page }}</h2>
 <div class="container">
