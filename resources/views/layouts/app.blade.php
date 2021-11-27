@@ -11,7 +11,7 @@
 
 <body>
 <header>Issou
-    <img src="logo.png">
+    <img src="/toutpetitfb/css/images/logo.png" height=50px>
 </header>
 
 @isset($_SESSION['info'])
