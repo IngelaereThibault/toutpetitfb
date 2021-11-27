@@ -1,21 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-    <meta charset='UTF-8'>
-    <link rel="stylesheet" type="text/css" href="public/css/style.css" />
-
-    <title>{{ $titre }}</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma super application</title>
+    <link href="/css/style.css" rel="stylesheet">
 </head>
 
 <body>
-<h1>Bienvenu sur ce super site</h1>
+<header>Issou</header>
+
+@isset($_SESSION['info'])
+    <div>
+        <strong>Information : </strong> {{$_SESSION['info']}}
+    </div>
+@endisset
+
 <nav>
-    <a href="Accueil.php">Accueil</a>
-    <a href="Amis.php">Amis</a>
+    <a href="/index.php">Home page</a>
+
+    <a href="/index.php?action=page2">Page 2</a>
+
+    @isset($_SESSION['id'])
+        Bonjour  {{$_SESSION['login']}} <a href='index.php?action=deconnexion'>Deconnexion</a></li>
+    @else
+        <a href='index.php?action=login'>Login</a>
+        <a href='index.php?action=signin'>Inscription</a>
+    @endif
 </nav>
-<h2>Page en cours : {{ $page }}</h2>
-<div class="container">
+
+<main class="container">
     @yield("content")
-</div>
+</main>
+
+<footer>Le super pied</footer>
 </body>
 </html>

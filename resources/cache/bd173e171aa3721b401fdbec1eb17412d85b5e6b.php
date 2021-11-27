@@ -1,21 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-    <meta charset='UTF-8'>
-    <link rel="stylesheet" type="text/css" href="public/css/style.css" />
-
-    <title><?php echo e($titre); ?></title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma super application</title>
+    <link href="/css/style.css" rel="stylesheet">
 </head>
 
 <body>
-<h1>Bienvenu sur ce super site</h1>
+<header>Issou</header>
+
+<?php if(isset($_SESSION['info'])): ?>
+    <div>
+        <strong>Information : </strong> <?php echo e($_SESSION['info']); ?>
+
+    </div>
+<?php endif; ?>
+
 <nav>
-    <a href="Accueil.php">Accueil</a>
-    <a href="Amis.php">Amis</a>
+    <a href="/index.php">Home page</a>
+
+    <a href="/index.php?action=page2">Page 2</a>
+
+    <?php if(isset($_SESSION['id'])): ?>
+        Bonjour  <?php echo e($_SESSION['login']); ?> <a href='index.php?action=deconnexion'>Deconnexion</a></li>
+    <?php else: ?>
+        <a href='index.php?action=login'>Login</a>
+        <a href='index.php?action=signin'>Inscription</a>
+    <?php endif; ?>
 </nav>
-<h2>Page en cours : <?php echo e($page); ?></h2>
-<div class="container">
+
+<main class="container">
     <?php echo $__env->yieldContent("content"); ?>
-</div>
+</main>
+
+<footer>Le super pied</footer>
 </body>
 </html>
