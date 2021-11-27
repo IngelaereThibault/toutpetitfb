@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ma super application</title>
     <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/bootstrap.css" rel="stylesheet">
 </head>
 
 <body>
-<header>Issou</header>
+<header>Issou
+    <img src="logo.png">
+</header>
 
 <?php if(isset($_SESSION['info'])): ?>
     <div>
@@ -19,14 +22,14 @@
 <?php endif; ?>
 
 <nav>
-    <a href="/index.php">Home page</a>
+    <a href="/index.php">Accueil</a>
 
-    <a href="/index.php?action=page2">Page 2</a>
+    <a href="/index.php?action=page2">Découvrir</a>
 
     <?php if(isset($_SESSION['id'])): ?>
         Bonjour  <?php echo e($_SESSION['login']); ?> <a href='index.php?action=deconnexion'>Deconnexion</a></li>
     <?php else: ?>
-        <a href='index.php?action=login'>Login</a>
+        <a href='index.php?action=login'>Se connecter</a>
         <a href='index.php?action=signin'>Inscription</a>
     <?php endif; ?>
 </nav>
