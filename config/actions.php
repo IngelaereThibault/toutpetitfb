@@ -3,7 +3,7 @@
 
 $listeDesActions = array(
     "index" => "actions/index.php",
-    "page2" => "actions/page2.php",
+    "decouvrir" => "actions/decouvrir.php",
     "login" => "actions/login.php",
     "signin" => "actions/signin.php",
 );

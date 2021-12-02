@@ -22,9 +22,9 @@
 <?php endif; ?>
 
 <nav>
-    <a href="/index.php">Accueil</a>
+    <a href="index.php">Accueil</a>
 
-    <a href="/index.php?action=page2">Découvrir</a>
+    <a href="index.php?action=decouvrir">Découvrir</a>
 
     <?php if(isset($_SESSION['id'])): ?>
         Bonjour  <?php echo e($_SESSION['login']); ?> <a href='index.php?action=deconnexion'>Deconnexion</a></li>

@@ -33,7 +33,13 @@
 					<span class="login100-form-title">
 						Inscription
 					</span>
-
+					<div class="wrap-input100 validate-input" data-validate = "Pseudo">
+						<input class="input100" type="text" name="pseudo" placeholder="Votre pseudo">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-user" aria-hidden="true"></i>
+						</span>
+					</div>
 					<div class="wrap-input100 validate-input" data-validate = "Entrez une adresse mail valide">
 						<input class="input100" type="text" name="email" placeholder="Email">
 						<span class="focus-input100"></span>
@@ -42,15 +48,32 @@
 						</span>
 					</div>
 					<div class="wrap-input100 validate-input" data-validate = "Confirmez votre adresse mail">
-						<input class="input100" type="text" name="email" placeholder="Email">
+						<input class="input100" type="text" name="email" placeholder="Confirmez votre Email">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-envelope" aria-hidden="true"></i>
 						</span>
 					</div>
 
+					<div class="wrap-input100 validate-input" data-validate = "Date de naissance">
+					<input class="input100" id="date" type="date" value="2017-06-01">
+					<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-calendar" aria-hidden="true"></i>
+						</span>
+					</div>
+					
+
+
 					<div class="wrap-input100 validate-input" data-validate = "Entrez votre mot de passe">
 						<input class="input100" type="password" name="pass" placeholder="Mot de passe">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-lock" aria-hidden="true"></i>
+						</span>
+					</div>
+					<div class="wrap-input100 validate-input" data-validate = "Entrez votre mot de passe">
+						<input class="input100" type="password" name="pass" placeholder="Confirmez votre mot de passe">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-lock" aria-hidden="true"></i>
@@ -67,7 +90,7 @@
 					
 
 					<div class="text-center p-t-136">
-						<a class="txt2" href="index.php?login">
+						<a class="txt2" href="index.php?action=login">
 							Se connecter
 							<i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
 						</a>
