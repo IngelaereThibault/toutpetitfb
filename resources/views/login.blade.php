@@ -62,7 +62,7 @@
 						<span class="txt1">
 
 						</span>
-						<a class="txt2" href="#">
+						<a class="txt2" href="index.php?action=forgot">
 							Mot de passe oublié ?
 						</a>
 					</div>
