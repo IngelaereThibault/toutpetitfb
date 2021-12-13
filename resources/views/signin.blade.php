@@ -5,22 +5,6 @@
 	<title>Inscription</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--===============================================================================================-->
-	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="css/util.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-<!--===============================================================================================-->
 </head>
 <body>
 
@@ -31,7 +15,7 @@
 					<img src="images/img-01.png" alt="IMG">
 				</div>
 
-				<form class="login100-form validate-form">
+				<form class="login100-form validate-form" method="post" action="index.php?action=signin2">
 					<span class="login100-form-title">
 						Inscription
 					</span>
@@ -49,16 +33,12 @@
 							<i class="fa fa-envelope" aria-hidden="true"></i>
 						</span>
 					</div>
-					<div class="wrap-input100 validate-input" data-validate = "Confirmez votre adresse mail">
-						<input class="input100" type="text" name="email" placeholder="Confirmez votre Email">
-						<span class="focus-input100"></span>
-						<span class="symbol-input100">
-							<i class="fa fa-envelope" aria-hidden="true"></i>
-						</span>
-					</div>
 
+					<div class="wrap-input100 validate-input" data-validate = "Avatar">
+						<input class="button100" id="image" type="file" name="avatar" placeholder="Photo" required=""s capture>
+						</div>
 					<div class="wrap-input100 validate-input" data-validate = "Date de naissance">
-					<input class="input100" id="date" type="date" value="2017-06-01">
+					<input class="input100" id="date" type="date" name="date" value="2017-06-01">
 					<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-calendar" aria-hidden="true"></i>
@@ -66,25 +46,18 @@
 					</div>
 					
 
+					<div class="wrap-input100 validate-input" data-validate = "Entrez votre mot de passe">
+						<input class="input100" type="password" name="password" placeholder="Mot de passe">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-lock" aria-hidden="true"></i>
+						</span>
+					</div>
 
-					<div class="wrap-input100 validate-input" data-validate = "Entrez votre mot de passe">
-						<input class="input100" type="password" name="pass" placeholder="Mot de passe">
-						<span class="focus-input100"></span>
-						<span class="symbol-input100">
-							<i class="fa fa-lock" aria-hidden="true"></i>
-						</span>
-					</div>
-					<div class="wrap-input100 validate-input" data-validate = "Entrez votre mot de passe">
-						<input class="input100" type="password" name="pass" placeholder="Confirmez votre mot de passe">
-						<span class="focus-input100"></span>
-						<span class="symbol-input100">
-							<i class="fa fa-lock" aria-hidden="true"></i>
-						</span>
-					</div>
 					
 
 					<div class="container-login100-form-btn">
-						<button class="login100-form-btn">
+						<button class="login100-form-btn" type="submit">
 							S'inscrire
 						</button>
 					</div>

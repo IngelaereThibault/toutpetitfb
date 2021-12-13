@@ -6,5 +6,8 @@ $listeDesActions = array(
     "decouvrir" => "actions/decouvrir.php",
     "login" => "actions/login.php",
     "signin" => "actions/signin.php",
+    "signin2" => "actions/signin2.php",
     "forgot" => "actions/forgot.php",
+    "deconnexion" => "actions/deconnexion.php",
+    "loginscript" => "actions/loginscript.php",
 );
