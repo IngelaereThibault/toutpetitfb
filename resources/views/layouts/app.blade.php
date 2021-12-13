@@ -36,14 +36,14 @@
     </div>
 @endisset
 
-<nav>
-    <ul class="nav__links">
-        <li><a href="index.php">Accueil</a></li>
-        <li><a href="index.php?action=decouvrir">Découvrir</a> </li>
-</ul>
-</nav>
         
     @isset($_SESSION['id'])
+    <nav>
+        <ul class="nav__links">
+            <li><a href="index.php">Accueil</a></li>
+            <li><a href="index.php?action=profil">Mon profil</a></li>
+    </ul>
+    </nav>
         Bonjour  {{$_SESSION['login']}} <a class="btnco" href='index.php?action=deconnexion'>Deconnexion</a>
     @else
         

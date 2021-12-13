@@ -37,14 +37,14 @@
     </div>
 <?php endif; ?>
 
-<nav>
-    <ul class="nav__links">
-        <li><a href="index.php">Accueil</a></li>
-        <li><a href="index.php?action=decouvrir">Découvrir</a> </li>
-</ul>
-</nav>
         
     <?php if(isset($_SESSION['id'])): ?>
+    <nav>
+        <ul class="nav__links">
+            <li><a href="index.php">Accueil</a></li>
+            <li><a href="index.php?action=profil">Mon profil</a></li>
+    </ul>
+    </nav>
         Bonjour  <?php echo e($_SESSION['login']); ?> <a class="btnco" href='index.php?action=deconnexion'>Deconnexion</a>
     <?php else: ?>
         

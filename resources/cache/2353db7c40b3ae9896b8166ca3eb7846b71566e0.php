@@ -33,7 +33,7 @@
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate = "Avatar">
-						<input class="button100" id="image" type="file" name="avatar" placeholder="Photo" required="" capture>
+						<input class="button100" id="image" type="file" name="avatar" placeholder="Photo" required=""s capture>
 						</div>
 					<div class="wrap-input100 validate-input" data-validate = "Date de naissance">
 					<input class="input100" id="date" type="date" name="date" value="2017-06-01">
